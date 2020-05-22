@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C2.10 (results)</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="../src/results.js" defer></script>
+</head>
+<body>
+    <div class="container-fluid d-flex flex-column justify-content-center align-items-center p-3 mb-2 bg-warning text-dark" style="height: 100vh">
+        
+        <div class="w-75 h-75 d-flex flex-column justify-content-around align-items-center p-3 mb-2 bg-light text-dark shadow-lg p-3 mb-5 bg-white rounded">
+            <div class="w-100 d-flex flex-column align-items-center">
+                <div class="w-75 d-flex justify-content-end">
+                    <button id="btnClose" onclick="closeWindow()" type="button" class="close" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <h1>Результаты голосования <span class="badge badge-secondary">New</span></h1>
+            </div>
+            
+            
+            <div class="w-75 shadow p-3 mb-5 bg-white rounded">
+                <h6>Кошки:</h6>
+                <div class="progress">
+                    <div id="progress-Cats" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p></p>
+                <h6>Собаки:</h6>
+                <div class="progress">
+                    <div id="progress-Dogs" class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p></p>
+                <h6>Попугаи:</h6>
+                <div class="progress">
+                    <div id="progress-Parrots" class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p></p>
+                <h4>Всего проголосовало:</h4>
+                <div class="progress">
+                    <div id="progress-Animals" class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
